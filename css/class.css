@@ -1,0 +1,85 @@
+/* wrap */
+.wr240{margin: 0 calc(100vw * 240 / 1920);}
+.twr{width:100vw;  height: calc(100vw * 600 / 1920); }
+.titleP{padding: calc(100vw * 160 / 1920) 0;}
+.titleP-sub{padding: calc(100vw * 160 / 1920) 0 calc(100vw * 50 / 1920) 0;}
+.inner{margin: 0 calc(100vw * 240 / 1920);}
+
+
+/*font*/
+.s0{font-size: calc(100vw * 18 / 1920); font-weight: 600;}
+.s1{font-size: calc(100vw * 20 / 1920); font-weight: 900;}
+
+.t1{font-size: calc(100vw * 35 / 1920); font-weight: 400;}
+.t2{font-size: calc(100vw * 40 / 1920); font-weight: 800;}
+
+.d1{font-size: calc(100vw * 25 / 1920); font-weight: 500;}
+.ds{font-size: calc(100vw * 25 / 1920); font-weight: 700; text-decoration: underline;}
+.d3{font-size: calc(100vw *25 / 1920); font-weight: 600; }
+.d4{font-size: calc(100vw *20 / 1920); font-weight: 200;}
+
+
+/*padding & margin*/
+.tp1{padding: calc(100vw * 20 / 1920) 0 calc(100vw * 10 / 1920) 0; }
+
+
+/*color*/
+.c0{color: #000;}
+.c1{color: #3e3e3e;}
+.c2{color: #405388;}
+.c3{color: #ffc93c;}
+.c4{color: #bfbfbf;}
+.c5{color: #fff;}
+
+
+/*background */
+.b0{background: #000;}
+.b1{background: #3e3e3e;}
+.b2{background: #405388;}
+.b3{background: #ffc93c;}
+.b4{background: #bfbfbf;}
+.b5{background: #fff;}
+.b6{background: #f5f5f5;}
+
+/*btn*/
+.newbtn{max-width: 20vw; border-radius: 90px; padding: 1vh 1vw; text-align: center;}
+
+/* img */
+.m1{width: 100%;}
+
+/*dot*/
+.dot{text-emphasis: filled;}
+
+@media (max-width:767px) {
+/* wrap */
+.wr240{margin: 0 calc(100vw * 120 / 1920);}
+.twr{width:100vw;  height: calc(100vw * 600 / 1080); }
+.titleP{padding: calc(100vw * 330 / 1920) 0;}
+.titleP-sub{padding: calc(100vw * 200 / 1920) 0 calc(100vw * 50 / 1920) 0;}
+.inner{margin: 0 calc(100vw * 240 / 1920);}
+
+
+
+/*font*/
+.s0{font-size: calc(100vw *15 / 1920); font-weight: 600;}
+.s1{font-size: calc(100vw *28 / 1920); font-weight: 900;}
+
+.t1{font-size: calc(100vw *75 / 1920); font-weight: 300;}
+.t2{font-size: calc(100vw *85 / 1920); font-weight: 700;}
+
+.d1{font-size: calc(100vw *55 / 1920); font-weight: 200;}
+.ds{font-size: calc(100vw *55 / 1920); font-weight: 400; text-decoration: underline;}
+.d3{font-size: calc(100vw *55 / 1920); font-weight: 600; }
+.d4{font-size: calc(100vw *40 / 1920); font-weight: 200;}
+
+
+/*padding & margin*/
+.tp1{padding: 17px 0 3px 0 }
+
+/*btn*/
+.newbtn{ margin: 0 auto; max-width: 40vw; text-align: center;}
+
+} 
+
+
+  

@@ -10,7 +10,7 @@ header > div > .nav{float: right; }
 header > div > .nav > ul{display: inline; padding-right: calc(100vw * 50 / 1920); }
 header > div > .nav > ul > li{display: inline-block; font-size: calc(100vw *20 / 1920); padding: calc(100vw *17 / 1920) calc(100vw *20 / 1920);;}
  
-.banner{width: calc(100vw *1920 / 1920); height: 100vh; background-image: url(/img/banner.png); background-repeat: no-repeat; background-size: cover; color: #fff;}
+.banner{width: calc(100vw *1920 / 1920); height: 100vh; background-image: url('./img/banner.png'); background-repeat: no-repeat; background-size: cover; color: #fff;}
 .banner-title{width: 100%; text-align: center; font-size: calc(100vw *40 / 1920); padding-top: calc(100vw *240 / 1920);}
 .banner-title > .sub{font-weight: 200;}
 .banner-title > .sub > span {color: #ffc93c; font-weight: 700;}

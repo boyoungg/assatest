@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
 
-body{font-family: 'Pretendard'; overflow-x: hidden; width: calc(100vw * 1920 / 1920); }
+body{font-family: 'Pretendard'; overflow-x: hidden; width: calc(100vw * 1920 / 1920); max-width: 1920px;}
+section{width: 100vw; margin: 0 auto;}
 
-header{width: 100%; height: calc(100vw *55 / 1920); background: #ffffffe3; position: fixed;}
+header{width: 100%; height: calc(100vw *55 / 1920); background: #ffffffe3; position: fixed;z-index: 1;}
 header > div > .logo{display: inline;}
 header > div > .logo > img{width: calc(100vw *200 / 1920); padding: calc(100vw * 7 / 1920) calc(100vw * 50 / 1920);}
 header > div > .nav{float: right; }
 header > div > .nav > ul{display: inline; padding-right: calc(100vw * 50 / 1920); }
 header > div > .nav > ul > li{display: inline-block; font-size: calc(100vw *20 / 1920); padding: calc(100vw *17 / 1920) calc(100vw *20 / 1920);;}
  
-.banner{width: calc(100vw *1920 / 1920); height: 100vh; background-image: url(./img/banner.png); background-repeat: no-repeat; background-size: cover; color: #fff;}
+.banner{width: calc(100vw *1920 / 1920); height: 100vh; background-image: url(/img/banner.png); background-repeat: no-repeat; background-size: cover; color: #fff;}
 .banner-title{width: 100%; text-align: center; font-size: calc(100vw *40 / 1920); padding-top: calc(100vw *240 / 1920);}
 .banner-title > .sub{font-weight: 200;}
 .banner-title > .sub > span {color: #ffc93c; font-weight: 700;}
 .banner-title > h1{font-size: calc(100vw *120 / 1920); font-weight: 900; padding-top: 2vh;}
-.dot{text-emphasis: filled #ffc93c;}
 
 .conut-wr{text-align: center; display: flex; width: 100%; justify-content: center; margin-top: calc(100vw *120 / 1920);}
 .conut-wr > .conunt-ani{width: calc(100vw *300 / 1920); height: 10%; font-size: calc(100vw *40 / 1920); font-weight: 800;}
@@ -26,35 +26,53 @@ header > div > .nav > ul > li{display: inline-block; font-size: calc(100vw *20 /
 .slide{width: calc(100vw *1920 / 1920); height: calc(100vw *1080 / 1920);  }
 .clear{clear: both;}
 
-/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/ 
-@media all and (min-width:768px) and (max-width:1023px) { 
+/*section01*/
+.naverCafe{overflow: hidden;}
+.naverCafe > .wr240 {display: flex;}
+.naverCafe > .wr240 > .flexwr{width: 46%;}
+.naverCafe > .wr240 > .flexwr > img{width: 120%;}
 
+/*section02*/
+#service{height: 150vh;}
+#service > .wr240 > .service-nav{display: flex; justify-content: left;}
+#service > .wr240 > .service-nav > li{ background-color: #eeeeee;     padding: 1vh 1vw; border-radius: 99px; margin: 15px 5px;}
+#service > .wr240 > .service-nav > li.active{background-color: #ffc93c; color: #fff;}
+
+#service > .wr240 > .slidewr{height: 85vh; margin-top: 2vh; background-color:#ccc; position: relative;}
+#service > .wr240 > .slidewr > .silde-section { width: 100%; height: 100%; background-color:#444444; position: absolute; top: 0; display: none;}
+#service > .wr240 > .slidewr > .silde-section.show{display: block;}
+
+/*section03*/
+#backimg{height: calc(100vw *500 / 1920); background-image: url('../img/bg.png'); background-attachment: fixed; text-align: center;}
+
+/*section04*/
+#nextback{height: calc(100vw *400 / 1920); text-align: center;}
+#nextback > .wr240 > .titleP{padding: calc(100vw * 110 / 1920) 0;}
+
+
+/*section05*/
+#review{height: 250vh;}
+
+
+#adproduct{height: 150vh;}
+#adproduct > .wr240 > .imgwrr{text-align: center; margin-top: 100px;}
+#adproduct > .wr240 > .imgwrr > img{width: 60%;}
+
+
+
+
+
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:1023px) and (max-width:1440px) { 
+  .conut-wr{ margin-top: calc(100vw *130 / 1920);}
+  .conut-wr > .conunt-ani{font-size: calc(100vw *50 / 1920); float: left; padding: 0 calc(100vw *50 / 1920);}
+  .conut-wr > .conunt-ani > .count-tit{font-size: calc(100vw *20 / 1920);}
+  .count > .coun-text{ font-size: calc(100vw *20 / 1920); line-height: 3;}
+  
+
+  /*section04*/
+  #nextback > .wr240 > .titleP{padding: calc(100vw * 130 / 1920) 0;}
 
 } 
   
-/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
-@media all and (min-width:768px) and (max-width:1023px) { 
-
-
-} 
-
-@media (max-width:767px) {
-  body{max-width: 767px; width: 100vw;}
-  header{height: 40px;}
-  header > div > .logo{display: block; text-align: center;}
-  header > div > .logo > img{width: 150px; padding: 10px;}
-  header > div > .nav{display: none;}
-
-  .banner-title{font-size: calc(100vw *80 / 1920); padding-top: calc(100vw *450 / 1920);}
-  .banner-title > h1{font-size: calc(100vw *200 / 1920);}
-
-  .conut-wr{display: block; width: 100%; margin-top: calc(100vw *400 / 1920);}
-  .conut-wr > .conunt-ani{ width: auto; font-size: calc(100vw *140 / 1920); padding-bottom: 30px;}
-  .conut-wr > .conunt-ani > .count-tit{font-size: calc(100vw *60 / 1920); }
-  .count > .coun-text{ font-size: calc(100vw *60 / 1920); line-height: 3; }
-
-  .service{}
-  .service-text{text-align: center;}
-} 
-
 
